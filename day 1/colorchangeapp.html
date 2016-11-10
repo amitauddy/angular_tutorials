@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example Two</title>
+        <script src="../static/angular.js"></script>
+    </head>
+    <body>
+        <div data-ng-app="colorChange" data-ng-controller="change">
+            Enter Code: <input type="text" data-ng-model="code">
+            <div style="background-color:{{ code }};width:200px;height:200px;margin: 0 auto;">
+
+            </div>
+        </div>
+        
+    </body>
+    <script>
+        var app = angular.module("colorChange", []);
+        app.controller('change', function($scope) {
+            $scope = "#fff";
+        });
+    </script>
+</html>
